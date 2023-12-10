@@ -1,7 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-
+  devServer: {
+    port: 3005,
+  },
   app: {
     head: {
       // 解决403 Forbbiden问题

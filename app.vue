@@ -10,3 +10,15 @@ useSeoMeta({
 <template>
   <NuxtPage :keepalive="{ max: 10 }" />
 </template>
+
+<style lang="scss">
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+</style>

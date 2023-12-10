@@ -73,3 +73,32 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## 完整项目目录
+
+```
+nuxt-app/
+├── .nuxt/
+├── .output/
+├── assets/
+├── components/
+├── composables/
+├── content/
+├── layouts/
+├── middleware/
+├── node_modules/
+├── pages/
+├── plugins/
+├── public/
+└── server/
+          ├── api/
+          ├── routes/
+          └── middleware/
+├── .gitignore
+├── .nuxtignore
+├── app.config.ts
+├── app.vue
+├── nuxt.config.ts
+├── package.json
+└── tsconfig.json
+```
