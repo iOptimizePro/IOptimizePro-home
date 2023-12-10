@@ -1,0 +1,30 @@
+{
+  "name": "i-optimize-pro-home",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare": "husky install",
+    "commitlint": "commitlint --config commitlint.config.js -e -V",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/eslint-module": "^4.1.0",
+    "@rushstack/eslint-patch": "^1.3.3",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "@vue/eslint-config-typescript": "^12.0.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "husky": "^8.0.3",
+    "nuxt": "^3.8.2",
+    "prettier": "^3.1.0",
+    "sass": "^1.69.5",
+    "vue": "^3.3.10",
+    "vue-router": "^4.2.5"
+  }
+}
