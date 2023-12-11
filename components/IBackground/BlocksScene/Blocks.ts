@@ -52,7 +52,7 @@ export default class Blocks extends kokomi.Component {
   addLight() {
     this.base.scene.add(new THREE.AmbientLight(0xcccccc)) // 环境光
 
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 3)
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 2)
     directionalLight.position.set(1, 1, 1)
     this.base.scene.add(directionalLight) // 平行光
   }

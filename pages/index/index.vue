@@ -5,8 +5,6 @@
       <div class="banner">
         <div class="wrapper">
           <div class="blur-wrapper">
-            <div class="circle"></div>
-            <div class="circle"></div>
             <div class="title">iOptimizePro</div>
             <div class="desc">智能工业数据分析与优化平台</div>
             <button class="btn btn-primary">立即体验</button>
@@ -15,7 +13,7 @@
       </div>
       <!--<img src="~assets/images/bg1.png" />-->
       <!--客户端渲染 three.js中使用了document所以使用客户端渲染-->
-      <client-only placeholder="Loading...">
+      <client-only>
         <i-background class="background" />
       </client-only>
     </div>
@@ -32,7 +30,7 @@ import IBackground from '~/components/IBackground/IBackground.vue'
 <style lang="scss" scoped>
 #app {
   $colors: (
-    1: transparent,
+    1: #000,
     2: #0f0,
     3: #00f,
     4: #ff0,
@@ -45,20 +43,13 @@ import IBackground from '~/components/IBackground/IBackground.vue'
     justify-content: center;
     font-size: 40px;
     height: 100vh;
-    background: #fff;
-
-    .background {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
 
     .banner {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       width: 100%;
+      z-index: 1;
 
       .wrapper {
         width: 100%;
@@ -66,23 +57,44 @@ import IBackground from '~/components/IBackground/IBackground.vue'
         display: flex;
         justify-content: center;
         align-items: center;
-        transform: translate(-20%, 0%);
-        @media screen and (max-width: 768px) {
-          transform: translate(0%, 0%);
-        }
+        //transform: translate(-20%, 0%);
+        //@media screen and (max-width: 768px) {
+        //  transform: translate(0%, 0%);
+        //}
 
         .blur-wrapper {
           //position: absolute;
           display: flex;
+          width: 60%;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          backdrop-filter: blur(5px);
+          //backdrop-filter: blur(10px);
           //background: #000000d0;
           //filter: blur(10px);
-          border: 2px #ffffffd0 dashed;
-          padding: 30px;
+          //border: 2px #ffffffd0 dashed;
+          padding: 50px 0;
+          filter: blur(10px);
+          opacity: 0;
+          transform: translateY(-30px);
+          animation: fadeIn 1s ease-out 1.2s forwards;
           //z-index: -1;
+
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            padding: 20px 0;
+          }
+
+          @keyframes fadeIn {
+            0% {
+              opacity: 0;
+              filter: blur(10px);
+            }
+            100% {
+              opacity: 1;
+              filter: blur(0px);
+            }
+          }
 
           .title {
             font-size: 60px;
