@@ -16,9 +16,18 @@ useSeoMeta({
   padding: 0;
   margin: 0;
   -webkit-tap-highlight-color: transparent;
+
+  //文字禁止选中
+  user-select: none; /* 标准语法 */
 }
 
 a {
   text-decoration: none;
+}
+
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
 }
 </style>

@@ -3,6 +3,37 @@ import { ref } from 'vue'
 import IMenuItems from '~/components/IMenu/components/IMenuItems.vue'
 
 const isOpenDropdown = ref(false)
+
+const data = ref([
+  {
+    name: '数据上传',
+    url: '#',
+  },
+  {
+    name: '场景列表',
+    url: '#',
+  },
+  {
+    name: '数据分析',
+    url: '#',
+  },
+  {
+    name: '通知提醒',
+    url: '#',
+  },
+  {
+    name: '人员管理',
+    url: '#',
+  },
+  {
+    name: '角色切换',
+    url: '#',
+  },
+  {
+    name: '个人中心',
+    url: '#',
+  },
+])
 </script>
 
 <template>
@@ -13,14 +44,14 @@ const isOpenDropdown = ref(false)
       </a>
     </div>
     <div class="menu-right">
-      <i-menu-items />
+      <i-menu-items :data="data" />
     </div>
 
     <div class="menu-right-mobile" @click="isOpenDropdown = !isOpenDropdown">
       <Icon :size="30" icon="MenuOutlined" />
     </div>
     <div :class="['menu-dropdown', isOpenDropdown ? 'menu-dropdown-open' : '']">
-      <i-menu-items />
+      <i-menu-items :data="data" :font-size="30" />
     </div>
   </div>
 </template>
@@ -110,6 +141,10 @@ const isOpenDropdown = ref(false)
 
     @media screen and (min-width: 768px) {
       display: none;
+    }
+
+    a {
+      font-size: 25px !important;
     }
   }
 
