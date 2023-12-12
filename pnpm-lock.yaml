@@ -64,6 +64,9 @@ devDependencies:
   nuxt:
     specifier: ^3.8.2
     version: registry.npmmirror.com/nuxt@3.8.2(@types/node@18.19.3)(eslint@8.55.0)(sass@1.69.5)(typescript@5.3.3)(vite@5.0.7)
+  nuxt-swiper:
+    specifier: ^1.2.2
+    version: registry.npmmirror.com/nuxt-swiper@1.2.2
   prettier:
     specifier: ^3.1.0
     version: registry.npmmirror.com/prettier@3.1.0
@@ -7252,6 +7255,18 @@ packages:
       fsevents: registry.npmmirror.com/fsevents@2.3.3
     dev: true
 
+  registry.npmmirror.com/nuxt-swiper@1.2.2:
+    resolution: { integrity: sha512-y4s/srISP4OuhXbYg9/W1/6EWnbcoHRGEKBKAvGP0I2h0b3enhqZNEk7854M3F89ys8waacBXektPzamgl5xwQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/nuxt-swiper/-/nuxt-swiper-1.2.2.tgz }
+    name: nuxt-swiper
+    version: 1.2.2
+    dependencies:
+      '@nuxt/kit': registry.npmmirror.com/@nuxt/kit@3.8.2
+      swiper: registry.npmmirror.com/swiper@10.3.1
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: true
+
   registry.npmmirror.com/nuxt@3.8.2(@types/node@18.19.3)(eslint@8.55.0)(sass@1.69.5)(typescript@5.3.3)(vite@5.0.7):
     resolution: { integrity: sha512-HUAyifmqTs2zcQBGvcby3KNs2pBAk+l7ZbLjD1oCNqQQ+wBuZ1qgLC4Ebu++y4g3o3Y8WAWSvpafbKRLQZziPw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/nuxt/-/nuxt-3.8.2.tgz }
     id: registry.npmmirror.com/nuxt/3.8.2
@@ -9089,6 +9104,13 @@ packages:
       css-what: registry.npmmirror.com/css-what@6.1.0
       csso: registry.npmmirror.com/csso@5.0.5
       picocolors: registry.npmmirror.com/picocolors@1.0.0
+    dev: true
+
+  registry.npmmirror.com/swiper@10.3.1:
+    resolution: { integrity: sha512-24Wk3YUdZHxjc9faID97GTu6xnLNia+adMt6qMTZG/HgdSUt4fS0REsGUXJOgpTED0Amh/j+gRGQxsLayJUlBQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/swiper/-/swiper-10.3.1.tgz }
+    name: swiper
+    version: 10.3.1
+    engines: { node: '>= 4.7.0' }
     dev: true
 
   registry.npmmirror.com/synckit@0.8.6:

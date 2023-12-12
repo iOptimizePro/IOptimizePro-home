@@ -26,8 +26,8 @@ defineProps<{
         :style="`width: ${fontSize ? fontSize * 1.2 : 30}px; height: ${
           fontSize ? fontSize * 1.2 : 30
         }px; object-fit: cover`"
-        src="~assets/icon/user.png"
         class="icon-user"
+        src="~assets/icon/user.png"
       />
     </a>
   </div>
