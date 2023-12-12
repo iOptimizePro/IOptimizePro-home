@@ -1,30 +1,48 @@
 <template>
   <div id="app">
     <i-menu />
-    <div class="page">
-      <div class="banner">
-        <div class="wrapper">
-          <div class="blur-wrapper">
-            <div class="title">iOptimizePro</div>
-            <div class="desc">智能工业数据分析与优化平台</div>
-            <button class="btn btn-primary">立即体验</button>
+    <swiper
+      :direction="'vertical'"
+      :modules="modules"
+      :mousewheel="true"
+      :speed="1500"
+      style="height: 100vh"
+    >
+      <swiper-slide>
+        <div class="page page-1">
+          <div class="banner">
+            <div class="wrapper">
+              <div class="blur-wrapper">
+                <div class="title">iOptimizePro</div>
+                <div class="desc">智能工业数据分析与优化平台</div>
+                <button class="btn btn-primary">立即体验</button>
+              </div>
+            </div>
           </div>
+          <!--<img src="~assets/images/bg1.png" />-->
+          <!--客户端渲染 three.js中使用了document所以使用客户端渲染-->
+          <client-only>
+            <i-background class="background" />
+          </client-only>
         </div>
-      </div>
-      <!--<img src="~assets/images/bg1.png" />-->
-      <!--客户端渲染 three.js中使用了document所以使用客户端渲染-->
-      <client-only>
-        <i-background class="background" />
-      </client-only>
-    </div>
-    <div class="page">2</div>
-    <div class="page">3</div>
-    <div class="page">4</div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="page page-2">2</div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="page page-3">3</div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="page page-4">4</div>
+      </swiper-slide>
+    </swiper>
   </div>
 </template>
 
 <script lang="ts" setup>
-import IBackground from '~/components/IBackground/IBackground.vue'
+import { Mousewheel } from 'swiper/modules'
+
+const modules = [Mousewheel]
 </script>
 
 <style lang="scss" scoped>
@@ -149,7 +167,7 @@ import IBackground from '~/components/IBackground/IBackground.vue'
   }
 
   @each $key, $value in $colors {
-    .page:nth-child(#{$key + 1}) {
+    .page-#{$key} {
       background: $value;
     }
   }

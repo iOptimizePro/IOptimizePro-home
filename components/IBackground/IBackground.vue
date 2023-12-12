@@ -1,9 +1,21 @@
 <script lang="ts" setup>
-import BlocksScene from './BlocksScene'
+import { onMounted } from 'vue'
 
 function createBlocksScene() {
-  const blocksScene = new BlocksScene('.background')
-  blocksScene.create()
+  let BlocksScene: any = null
+  // 动态加载模块，nuxt 干的好事
+  if (process.client) {
+    import('./BlocksScene')
+      .then((module) => {
+        console.log(module.default)
+        BlocksScene = module.default
+        const blocksScene = new BlocksScene!('.background')
+        blocksScene.create()
+      })
+      .catch((error) => {
+        console.error('模块加载失败:', error)
+      })
+  }
 }
 
 onMounted(() => {
@@ -12,7 +24,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div ref="canvas" class="background"></div>
+  <div class="background"></div>
 </template>
 
 <style lang="scss" scoped>

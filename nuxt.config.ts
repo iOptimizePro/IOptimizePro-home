@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   devServer: {
     port: 3005,
   },
+
   app: {
     head: {
       // 解决403 Forbbiden问题
@@ -12,4 +13,8 @@ export default defineNuxtConfig({
   },
 
   modules: ['@nuxtjs/eslint-module', 'nuxt-swiper'],
+
+  build: {
+    transpile: ['three'],
+  },
 })
