@@ -29,4 +29,9 @@ html,
 body {
   //overflow-x: hidden;
 }
+
+@font-face {
+  font-family: ArailMTItalic;
+  src: url('~/assets/fonts/Arial-MT-W04-Black-Italic.ttf');
+}
 </style>

@@ -76,7 +76,7 @@ import IBackground from '~/components/IBackground/IBackground.vue'
           padding: 50px 0;
           filter: blur(10px);
           opacity: 0;
-          transform: translateY(-30px);
+          transform: translateY(50px);
           animation: fadeIn 1s ease-out 1.2s forwards;
           //z-index: -1;
 
@@ -89,16 +89,19 @@ import IBackground from '~/components/IBackground/IBackground.vue'
             0% {
               opacity: 0;
               filter: blur(10px);
+              transform: translateY(50px);
             }
             100% {
               opacity: 1;
               filter: blur(0px);
+              transform: translateY(0px);
             }
           }
 
           .title {
-            font-size: 60px;
-            font-weight: bold;
+            font:
+              bold 60px ArailMTItalic,
+              serif;
             margin-bottom: 20px;
             text-shadow: 0 0 10px #fff;
 
@@ -131,7 +134,8 @@ import IBackground from '~/components/IBackground/IBackground.vue'
             transition: all 0.3s;
 
             &:hover {
-              background: #1677ffff;
+              //background: #1677ffff;
+              background: #000000;
               color: #fff;
             }
 

@@ -34,20 +34,24 @@ const data = ref([
     url: '#',
   },
 ])
+
+function toggleDropdown() {
+  document.body.style.overflow = isOpenDropdown.value ? 'auto' : 'hidden' // 禁止滚动
+  isOpenDropdown.value = !isOpenDropdown.value
+}
 </script>
 
 <template>
   <div class="menu">
     <div class="logo">
       <a href="#">
-        <img src="~assets/images/logo2.png" />
+        <img src="~/assets/images/logo2.png" />
       </a>
     </div>
     <div class="menu-right">
       <i-menu-items :data="data" />
     </div>
-
-    <div class="menu-right-mobile" @click="isOpenDropdown = !isOpenDropdown">
+    <div class="menu-right-mobile" @click="toggleDropdown">
       <Icon :size="30" icon="MenuOutlined" />
     </div>
     <div :class="['menu-dropdown', isOpenDropdown ? 'menu-dropdown-open' : '']">
@@ -70,7 +74,7 @@ const data = ref([
   justify-content: space-around;
   align-items: center;
   height: $menu-height;
-  background: #000000d0;
+  background: transparent;
   //backdrop-filter: blur(10px);
   z-index: 999;
 
@@ -119,6 +123,7 @@ const data = ref([
       padding: 0 10px;
       font-size: 14px;
       cursor: pointer;
+      z-index: 10000;
     }
   }
 
@@ -149,8 +154,10 @@ const data = ref([
   }
 
   .menu-dropdown-open {
-    top: $menu-height;
-    height: calc(100vh - $menu-height);
+    //top: $menu-height;
+    //height: calc(100vh - $menu-height);
+    top: 0;
+    height: 100vh;
     opacity: 1;
     backdrop-filter: blur(10px);
     z-index: 9999;
