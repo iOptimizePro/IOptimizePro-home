@@ -6,12 +6,7 @@ export default class BlocksScene extends kokomi.Base {
   private blocks!: Blocks
 
   create() {
-    this.camera = new THREE.PerspectiveCamera(
-      70,
-      window.innerWidth / window.innerHeight,
-      1,
-      1000,
-    )
+    this.camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 1, 1000)
     this.camera.position.z = 400
     this.scene = new THREE.Scene()
     this.scene.background = new THREE.Color(0x000000)

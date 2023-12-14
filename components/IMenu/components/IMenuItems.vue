@@ -15,9 +15,7 @@ defineProps<{
   </div>
   <template v-for="item in data" :key="item">
     <div class="menu-item">
-      <a :href="item.url" :style="{ fontSize: `${fontSize}px` }">{{
-        item.name
-      }}</a>
+      <a :href="item.url" :style="{ fontSize: `${fontSize}px` }">{{ item.name }}</a>
     </div>
   </template>
   <div class="menu-item">
@@ -32,9 +30,7 @@ defineProps<{
     </a>
   </div>
   <div class="menu-item">
-    <a :style="{ fontSize: `${fontSize}px` }" class="login-link" href="#"
-      >登录</a
-    >
+    <a :style="{ fontSize: `${fontSize}px` }" class="login-link" href="#">登录</a>
   </div>
 </template>
 

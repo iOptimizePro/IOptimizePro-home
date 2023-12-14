@@ -1,13 +1,7 @@
 <template>
   <div id="app">
     <i-menu />
-    <swiper
-      :direction="'vertical'"
-      :modules="modules"
-      :mousewheel="true"
-      :speed="1500"
-      style="height: 100vh"
-    >
+    <swiper :direction="'vertical'" :modules="modules" :mousewheel="true" :speed="1500" style="height: 100vh">
       <swiper-slide>
         <div class="page page-1">
           <div class="banner">
