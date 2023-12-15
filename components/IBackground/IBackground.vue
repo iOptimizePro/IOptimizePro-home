@@ -7,7 +7,6 @@ function createBlocksScene() {
   if (process.client) {
     import('./BlocksScene')
       .then((module) => {
-        console.log(module.default)
         BlocksScene = module.default
         const blocksScene = new BlocksScene!('.background')
         blocksScene.create()

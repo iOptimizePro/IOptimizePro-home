@@ -9,7 +9,9 @@
               <div class="blur-wrapper">
                 <div class="title">iOptimizePro</div>
                 <div class="desc">智能工业数据分析与优化平台</div>
-                <button class="btn btn-primary">立即体验</button>
+                <button class="btn btn-primary">
+                  <a href="http://front.ioptimizepro.healwrap.cn" target="_blank">立即体验</a>
+                </button>
               </div>
             </div>
           </div>
@@ -139,7 +141,7 @@ const modules = [Mousewheel]
             font-size: 20px;
             font-weight: bold;
             background: #fff;
-            color: #000;
+
             border: none;
             outline: none;
             cursor: pointer;
@@ -148,11 +150,23 @@ const modules = [Mousewheel]
             &:hover {
               //background: #1677ffff;
               background: #000000;
-              color: #fff;
+
+              a {
+                color: #fff;
+              }
             }
 
             &:active {
               transform: scale(0.9);
+            }
+
+            a {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 100%;
+              height: 100%;
+              color: #000;
             }
           }
         }
