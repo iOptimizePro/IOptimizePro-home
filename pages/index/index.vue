@@ -15,11 +15,17 @@
               </div>
             </div>
           </div>
+          <!--第一版-->
           <!--<img src="~assets/images/bg1.png" />-->
+          <!--第二版-->
           <!--客户端渲染 three.js中使用了document所以使用客户端渲染-->
-          <client-only>
-            <i-background class="background" />
-          </client-only>
+          <!--<client-only>-->
+          <!--  <i-background class="background" />-->
+          <!--</client-only>-->
+          <!--第三版-->
+          <div class="background">
+            <img src="~assets/images/bg2.svg" />
+          </div>
         </div>
       </swiper-slide>
       <swiper-slide>
@@ -43,13 +49,6 @@ const modules = [Mousewheel]
 
 <style lang="scss" scoped>
 #app {
-  $colors: (
-    1: #000,
-    2: #0f0,
-    3: #00f,
-    4: #ff0,
-  );
-
   .page {
     position: relative;
     display: flex;
@@ -57,6 +56,43 @@ const modules = [Mousewheel]
     justify-content: center;
     font-size: 40px;
     height: 100vh;
+
+    .background {
+      position: absolute;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      opacity: 0;
+      filter: blur(10px);
+      overflow: hidden;
+      animation: fadeIn 1s ease-out 2s forwards;
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          filter: blur(10px);
+        }
+        100% {
+          opacity: 1;
+          filter: blur(0px);
+        }
+      }
+
+      img {
+        width: 70%;
+        height: 70%;
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
 
     .banner {
       display: flex;
@@ -69,8 +105,8 @@ const modules = [Mousewheel]
         width: 100%;
         height: 100%;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        //justify-content: center;
+        //align-items: center;
         //transform: translate(-20%, 0%);
         //@media screen and (max-width: 768px) {
         //  transform: translate(0%, 0%);
@@ -91,7 +127,7 @@ const modules = [Mousewheel]
           filter: blur(10px);
           opacity: 0;
           transform: translateY(50px);
-          animation: fadeIn 1s ease-out 1.2s forwards;
+          animation: fadeSlideIn 1s ease-out 1.2s forwards;
           //z-index: -1;
 
           @media screen and (max-width: 768px) {
@@ -99,7 +135,7 @@ const modules = [Mousewheel]
             padding: 20px 0;
           }
 
-          @keyframes fadeIn {
+          @keyframes fadeSlideIn {
             0% {
               opacity: 0;
               filter: blur(10px);
@@ -117,7 +153,7 @@ const modules = [Mousewheel]
               bold 60px ArailMTItalic,
               serif;
             margin-bottom: 20px;
-            text-shadow: 0 0 10px #fff;
+            //text-shadow: 0 0 10px #fff;
 
             @media screen and (max-width: 768px) {
               font-size: 50px;
@@ -127,7 +163,7 @@ const modules = [Mousewheel]
           .desc {
             font-size: 30px;
             margin-bottom: 20px;
-            text-shadow: 0 0 10px #fff;
+            //text-shadow: 0 0 10px #fff;
 
             @media screen and (max-width: 768px) {
               font-size: 20px;
@@ -140,16 +176,15 @@ const modules = [Mousewheel]
             border-radius: 5px;
             font-size: 20px;
             font-weight: bold;
-            background: #fff;
-
+            background: #1677ff;
             border: none;
             outline: none;
             cursor: pointer;
             transition: all 0.3s;
 
             &:hover {
-              //background: #1677ffff;
-              background: #000000;
+              background: #1677ff;
+              //background: #000000;
 
               a {
                 color: #fff;
@@ -166,7 +201,8 @@ const modules = [Mousewheel]
               justify-content: center;
               width: 100%;
               height: 100%;
-              color: #000;
+              //color: #000;
+              color: #ffffff;
             }
           }
         }
@@ -174,6 +210,12 @@ const modules = [Mousewheel]
     }
   }
 
+  $colors: (
+    1: #fff,
+    2: #0f0,
+    3: #00f,
+    4: #ff0,
+  );
   @each $key, $value in $colors {
     .page-#{$key} {
       background: $value;
