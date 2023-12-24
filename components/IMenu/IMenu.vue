@@ -45,7 +45,8 @@ function toggleDropdown() {
   <div class="menu">
     <div class="logo">
       <a href="#">
-        <img src="~/assets/images/logo2.png" />
+        <!--<img src="~/assets/images/logo2.png" />-->
+        <img src="~/assets/images/logo1.png" />
       </a>
     </div>
     <div class="menu-right">
@@ -62,7 +63,7 @@ function toggleDropdown() {
 
 <style lang="scss" scoped>
 * {
-  color: #fff;
+  color: #000;
 }
 
 .menu {
@@ -133,7 +134,8 @@ function toggleDropdown() {
     left: 0;
     width: 100%;
     height: 50vh;
-    background-color: #000000d0;
+    //background-color: #000000d0;
+    background-color: #ffffffd0;
     backdrop-filter: blur(0px);
     display: flex;
     flex-direction: column;

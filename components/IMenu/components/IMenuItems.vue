@@ -19,15 +19,15 @@ defineProps<{
     </div>
   </template>
   <div class="menu-item">
-    <a href="#">
-      <img
-        :style="`width: ${fontSize ? fontSize * 1.2 : 30}px; height: ${
-          fontSize ? fontSize * 1.2 : 30
-        }px; object-fit: cover`"
-        class="icon-user"
-        src="~assets/icon/user.png"
-      />
-    </a>
+    <!--<a href="#">-->
+    <!--  <img-->
+    <!--    :style="`width: ${fontSize ? fontSize * 1.2 : 30}px; height: ${-->
+    <!--      fontSize ? fontSize * 1.2 : 30-->
+    <!--    }px; object-fit: cover`"-->
+    <!--    class="icon-user"-->
+    <!--    src="~assets/icon/user.png"-->
+    <!--  />-->
+    <!--</a>-->
   </div>
   <div class="menu-item">
     <a :style="{ fontSize: `${fontSize}px` }" class="login-link" href="#">登录</a>
@@ -42,7 +42,8 @@ defineProps<{
   a {
     font-size: 18px;
     overflow: hidden;
-    color: #ffffff;
+    //color: #ffffff;
+    color: #000000;
     padding: 5px;
     text-overflow: ellipsis;
     white-space: nowrap;
