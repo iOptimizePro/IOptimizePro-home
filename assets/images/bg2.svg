@@ -559,7 +559,7 @@
       <stop offset=".79" stop-color="#595959"/>
       <stop offset=".93" stop-color="#1e1e1e"/>
       <!--<stop offset="1" stop-color="#000"/>-->
-      <stop offset="1" stop-color="#fff"/>
+      <stop offset="1" stop-color="transparent"/>
     </radialGradient>
     <radialGradient id="radial-gradient-19" cx="389.14" cy="250.06" fx="389.14" fy="250.06" r="1.44"
                     xlink:href="#radial-gradient-18"/>

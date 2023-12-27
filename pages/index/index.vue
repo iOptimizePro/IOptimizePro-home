@@ -24,7 +24,8 @@
           <!--</client-only>-->
           <!--第三版-->
           <div class="background">
-            <img src="~assets/images/bg2.svg" />
+            <img class="bg" src="~/assets/images/bg2.svg" />
+            <img class="bg-bg" src="~/assets/images/bg2-bg.svg" />
           </div>
         </div>
       </swiper-slide>
@@ -59,9 +60,6 @@ const modules = [Mousewheel]
 
     .background {
       position: absolute;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
       top: 0;
       left: 0;
       width: 100%;
@@ -82,15 +80,30 @@ const modules = [Mousewheel]
         }
       }
 
-      img {
-        width: 70%;
-        height: 70%;
+      .bg {
+        position: absolute;
+        top: 15%;
+        margin: 0 auto;
+        left: 25%;
+        height: 80%;
 
         @media screen and (max-width: 768px) {
+          top: 0;
+          left: 0;
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
+      }
+
+      .bg-bg {
+        position: absolute;
+        transform: rotateY(180deg);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        //z-index: 99;
+        z-index: -1;
       }
     }
 
@@ -162,7 +175,7 @@ const modules = [Mousewheel]
 
           .desc {
             font-size: 30px;
-            margin-bottom: 20px;
+            margin-bottom: 35px;
             //text-shadow: 0 0 10px #fff;
 
             @media screen and (max-width: 768px) {
