@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <i-menu />
-    <div class="page page-1">
+    <div class="banner-container">
       <div class="banner">
         <div class="wrapper">
           <div class="inner-wrapper">
@@ -117,6 +117,22 @@
       <!--  </div>-->
       <!--</div>-->
     </div>
+    <div class="footer">
+      <div class="footer-down">
+        <div class="inner">
+          <div class="fl">
+            友情链接：<a href="/" rel="nofollow" target="_blank">Vue.js官网</a>　　　
+            <a href="/" rel="nofollow" target="_blank">iOptimizePro智能工业数据分析与优化平台 </a>
+            <br />Created by 智造前沿 2023
+          </div>
+          <div class="fr">
+            <a href="/" target="_blank">网站地图</a><br />
+            版权所有@2023
+            <a href="/" rel="nofollow" target="_blank">智造前沿</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -126,7 +142,7 @@
 #app {
   $menu-height: 70px;
 
-  .page-1 {
+  .banner-container {
     position: relative;
     display: flex;
     color: #ffffff;
@@ -339,6 +355,33 @@
 
   .main {
     .page-1 {
+    }
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    .footer-down {
+      background: #212121;
+      padding: 26px 0;
+      font-size: 14px;
+      line-height: 24px;
+
+      .inner {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1200px;
+        clear: both;
+
+        div,
+        span,
+        a {
+          color: #fff;
+        }
+      }
     }
   }
 }
