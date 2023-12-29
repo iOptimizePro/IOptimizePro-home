@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-// swiper 样式
-import 'swiper/css'
 
 useSeoMeta({
   title: 'IOptimizePro | 智能工业数据分析与优化平台',

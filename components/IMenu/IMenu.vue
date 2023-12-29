@@ -75,7 +75,7 @@ function toggleDropdown() {
   justify-content: space-around;
   align-items: center;
   height: $menu-height;
-  background: transparent;
+  background: #ffffff;
   //backdrop-filter: blur(10px);
   z-index: 999;
 
