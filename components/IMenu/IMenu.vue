@@ -69,13 +69,14 @@ function toggleDropdown() {
 .menu {
   $menu-height: 70px;
 
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: $menu-height;
-  background: transparent;
+  background: #ffffff;
   //backdrop-filter: blur(10px);
   z-index: 999;
 

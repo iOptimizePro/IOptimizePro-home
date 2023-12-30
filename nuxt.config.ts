@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxtjs/eslint-module', 'nuxt-swiper'],
+  modules: ['@nuxtjs/eslint-module'],
 
   build: {
     transpile: ['three'],

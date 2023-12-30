@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-// swiper 样式
-import 'swiper/css'
+// 引入公共样式
+import '~/styles/styles.scss'
 
 useSeoMeta({
   title: 'IOptimizePro | 智能工业数据分析与优化平台',
