@@ -36,86 +36,52 @@
       </div>
     </div>
     <div class="main">
-      <!--<div class="page-1">-->
-      <!--  <div class="centers">-->
-      <!--    <div class="tx-mains-title floats">-->
-      <!--      <h3>人人可参与、人人可分析</h3>-->
-      <!--      <em></em>-->
-      <!--    </div>-->
-      <!--    <ul class="tx-ai1-nav tab-navs floats">-->
-      <!--      <li class="">-->
-      <!--        <img class="img1" src="/uploadfile/2022/0217/20220217062214297.png" alt="" />-->
-      <!--        <img class="img2" src="/uploadfile/2022/0217/20220217062222523.png" alt="" />-->
-      <!--        <h3>业务人员</h3>-->
-      <!--      </li>-->
-      <!--      <li class="">-->
-      <!--        <img class="img1" src="/uploadfile/2022/0217/20220217062127429.png" alt="" />-->
-      <!--        <img class="img2" src="/uploadfile/2022/0224/20220224040212370.png" alt="" />-->
-      <!--        <h3>数据分析师</h3>-->
-      <!--      </li>-->
-      <!--      <li class="cur">-->
-      <!--        <img class="img1" src="/uploadfile/2022/0217/20220217062036139.png" alt="" />-->
-      <!--        <img class="img2" src="/uploadfile/2022/0217/20220217062044765.png" alt="" />-->
-      <!--        <h3>数据科学家</h3>-->
-      <!--      </li>-->
-      <!--    </ul>-->
-      <!--    <div class="tx-ai1-main tab-mains floats" style="display: none">-->
-      <!--      <div class="text fl">-->
-      <!--        <h3>业务人员智能分析，一步搞定挖掘建模</h3>-->
-      <!--        <h4>内置案例开箱即用，全流程智能建模，零基础轻松玩转高阶技能</h4>-->
-      <!--        <p>内置丰富的行业案例，开箱即用，引导快速构建专属的业务模型</p>-->
-      <!--        <p>提供一键式建模功能，自动完成数据处理、特征工程 、算法选择和参数择优等全流程自动化实现</p>-->
-      <!--        <p>有效降低技术门槛，让业务人员能够快速构建专业模型</p>-->
-      <!--      </div>-->
-      <!--      <div class="img fr">-->
-      <!--        <div class="main">-->
-      <!--          <img src="/statics/mlsj2022/img/ai1-img1.png" alt="" />-->
-      <!--          <h3>不懂 AI 技术也能玩转“机器学习”</h3>-->
-      <!--          <span><i>零基础</i> <i>智能化</i> <i>低门槛</i> </span>-->
-      <!--          <h4>三小时快速学习、一步智能建模、一键快速部署</h4>-->
-      <!--        </div>-->
-      <!--      </div>-->
-      <!--    </div>-->
-      <!--    <div class="tx-ai1-main tab-mains floats" style="display: none">-->
-      <!--      <div class="text fl">-->
-      <!--        <h3>数据分析人员快速拖拽, 高效率完成自主建模</h3>-->
-      <!--        <h4>200+分析算子，自动学习机制，轻松玩转各类场景建模</h4>-->
-      <!--        <p>-->
-      <!--          内置数据接入、数据处理、特征工程、算法模型、模型评估等全流程节点，简单拖拽配置，快速完成业务分析与模型构建-->
-      <!--        </p>-->
-      <!--        <p>-->
-      <!--          9大算法类型、30+数据处理节点、120+分布式算法、5种独创算法、15种文本算法、多种行业算法，强大的分析能力满足各类问题诉求-->
-      <!--        </p>-->
-      <!--        <p>内置各类自动学习机制，有效提高建模效率</p>-->
-      <!--      </div>-->
-      <!--      <div class="img fr">-->
-      <!--        <div class="main">-->
-      <!--          <img src="/statics/mlsj2022/img/ai1-img2.png" alt="" />-->
-      <!--          <h3>不懂编码也能开展深度数据分析</h3>-->
-      <!--          <span><i>零编码</i> <i>拖拽式</i> <i>自动化</i> </span>-->
-      <!--          <h4>透明、可追溯、易复用的可视化建模过程</h4>-->
-      <!--        </div>-->
-      <!--      </div>-->
-      <!--    </div>-->
-      <!--    <div class="tx-ai1-main tab-mains floats cur" style="display: flex">-->
-      <!--      <div class="text fl">-->
-      <!--        <h3>复杂场景的灵活建模，满足数据科学家编码式分析需求</h3>-->
-      <!--        <h4>多语言的编程体系，多形式的嵌入方式，自定义玩转个性化分析需求</h4>-->
-      <!--        <p>内置SQL、Java、Python、R、Scala、Matlab编程节点，满足个性化数据处理和分析</p>-->
-      <!--        <p>插件化系统结构、灵活快速集成自有算法，沉淀企业自有算法知识库</p>-->
-      <!--        <p>Notebook交互式编程模式，让代码的编写和调试更简单</p>-->
-      <!--      </div>-->
-      <!--      <div class="img fr">-->
-      <!--        <div class="main">-->
-      <!--          <img src="/statics/mlsj2022/img/ai1-img3.png" alt="" />-->
-      <!--          <h3>让数据科学家专注分析，释放更大潜能</h3>-->
-      <!--          <span><i>自由拓展</i> <i>快速集成</i> <i>灵活编码</i> </span>-->
-      <!--          <h4>编码式建模 ，过程更灵活，知识易沉淀</h4>-->
-      <!--        </div>-->
-      <!--      </div>-->
-      <!--    </div>-->
-      <!--  </div>-->
-      <!--</div>-->
+      <div class="tx-tbi7 floats paddings">
+        <div class="centers">
+          <div class="tx-mains-title floats">
+            <h3>文档与工具</h3>
+            <em></em>
+          </div>
+          <ul class="tx-tbi7-main floats">
+            <li>
+              <a href="/" target="_blank">
+                <span class="text">
+                  <h3>帮助文档</h3>
+                  <em>查看产品详细操作手册</em>
+                </span>
+                <span class="img"><img alt="帮助文档" src="~/assets/images/page5/icon1.png" /><i></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="/" target="_blank">
+                <span class="text">
+                  <h3>行业干货</h3>
+                  <em>敬请期待</em>
+                </span>
+                <span class="img"><img alt="行业干货" src="~/assets/images/page5/icon2.png" /><i></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="/" target="_blank">
+                <span class="text">
+                  <h3>查看解决方案</h3>
+                  <em>查看更多行业解决方案</em>
+                </span>
+                <span class="img"><img alt="查看解决方案" src="~/assets/images/page5/icon3.png" /><i></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="/" target="_blank">
+                <span class="text">
+                  <h3>在线咨询</h3>
+                  <em>点此在线咨询客服</em>
+                </span>
+                <span class="img"><img alt="在线咨询" src="~/assets/images/page5/icon4.png" /><i></i></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="ads">
       <div class="inner">
@@ -133,12 +99,12 @@
       </div>
       <div class="footer-down">
         <div class="inner">
-          <div class="fl">
+          <div class="left">
             友情链接：<a href="/" rel="nofollow" target="_blank">Vue.js官网</a>　　　
             <a href="/" rel="nofollow" target="_blank">iOptimizePro智能工业数据分析与优化平台 </a>
             <br />Created by 智造前沿 2023
           </div>
-          <div class="fr">
+          <div class="right">
             <a href="/" target="_blank">网站地图</a><br />
             版权所有@2023
             <a href="/" rel="nofollow" target="_blank">智造前沿</a>
@@ -327,6 +293,9 @@
               filter: blur(0px);
             }
           }
+          @media screen and (max-width: 1200px) {
+            display: none;
+          }
           @media screen and (max-width: 768px) {
             display: none;
           }
@@ -337,12 +306,61 @@
 
   .main {
     position: relative;
+    //height: 50vh;
 
-    .page-1 {
+    .tx-tbi7-main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+
+      li {
+        width: 23.5%;
+        margin-left: 2%;
+
+        &:nth-child(4n-3) {
+          margin-left: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          margin-left: 0 !important;
+          margin-bottom: 15px;
+        }
+
+        a {
+          position: relative;
+          display: block;
+          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.08);
+          padding: 46px 32% 46px 24px;
+        }
+
+        .img {
+          position: absolute;
+          left: 68%;
+          top: 50%;
+          transform: translate(0, -50%);
+          -webkit-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+        }
+
+        em {
+          display: block;
+          font-size: 16px;
+          line-height: 30px;
+          font-style: normal;
+          color: #999;
+        }
+      }
     }
   }
 
   .ads {
+    position: relative;
     display: flex;
     background: url('~/assets/images/bg3.png') center center no-repeat;
     background-size: cover;
