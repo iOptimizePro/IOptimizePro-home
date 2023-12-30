@@ -117,7 +117,20 @@
       <!--  </div>-->
       <!--</div>-->
     </div>
+    <div class="ads">
+      <div class="inner">
+        <button class="btn btn-primary">
+          <a href="/">立即体验</a>
+        </button>
+        <button class="btn btn-dash">
+          <a href="/">方案咨询</a>
+        </button>
+      </div>
+    </div>
     <div class="footer">
+      <div class="footer-logo">
+        <div class="title">iOptimizePro</div>
+      </div>
       <div class="footer-down">
         <div class="inner">
           <div class="fl">
@@ -149,7 +162,7 @@
     justify-content: center;
     font-size: 40px;
     height: 578px;
-    top: $menu-height;
+    //top: $menu-height;
 
     @media screen and (max-width: 768px) {
       height: 230px;
@@ -195,7 +208,7 @@
 
         .inner-wrapper {
           margin: 0 auto;
-          width: 50%;
+          max-width: 1200px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -291,38 +304,7 @@
             }
 
             .btn {
-              width: 200px;
-              height: 50px;
-              border-radius: 5px;
-              font-size: 20px;
-              font-weight: bold;
-              background: #ffffff;
-              border: none;
-              outline: none;
-              cursor: pointer;
               margin-top: 40px;
-              transition: all 0.3s;
-
-              @media screen and (max-width: 768px) {
-                width: 100px;
-                height: 30px;
-                margin-top: 0;
-                font-size: 12px;
-              }
-
-              &:active {
-                transform: scale(0.9);
-              }
-
-              a {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                height: 100%;
-                //color: #000;
-                color: #1677ff;
-              }
             }
           }
         }
@@ -354,20 +336,76 @@
   }
 
   .main {
+    position: relative;
+
     .page-1 {
     }
   }
 
+  .ads {
+    display: flex;
+    background: url('~/assets/images/bg3.png') center center no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      padding: 30px 0;
+    }
+
+    .inner {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      max-width: 1200px;
+
+      .btn {
+        margin: 0 10px;
+      }
+    }
+  }
+
   .footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
+    background: #151515;
+
+    .footer-logo {
+      padding: 38px 0;
+      border-bottom: 1px solid #fff;
+
+      @media screen and (max-width: 768px) {
+        padding: 20px 0;
+      }
+
+      .title {
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-start;
+        max-width: 1200px;
+        color: #ffffff;
+        font:
+          bold 32px ArailMTItalic,
+          serif;
+        //text-shadow: 0 0 10px #fff;
+
+        @media screen and (max-width: 768px) {
+          justify-content: center;
+          font-size: 18px;
+        }
+      }
+    }
 
     .footer-down {
       background: #212121;
       padding: 26px 0;
       font-size: 14px;
       line-height: 24px;
+
+      @media screen and (max-width: 768px) {
+        padding: 12px 0;
+        font-size: 12px;
+      }
 
       .inner {
         display: flex;
@@ -376,6 +414,11 @@
         max-width: 1200px;
         clear: both;
 
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+          align-items: center;
+        }
+
         div,
         span,
         a {
@@ -383,6 +426,49 @@
         }
       }
     }
+  }
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  background: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  @media screen and (max-width: 768px) {
+    width: 100px;
+    height: 30px;
+    margin-top: 0;
+    font-size: 12px;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    //color: #000;
+    color: #1677ff;
+  }
+}
+
+.btn-dash {
+  background: transparent;
+  border: 1px #ffffff solid;
+
+  a {
+    color: #ffffff;
   }
 }
 </style>

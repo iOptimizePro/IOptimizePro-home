@@ -69,7 +69,7 @@ function toggleDropdown() {
 .menu {
   $menu-height: 70px;
 
-  position: fixed;
+  position: sticky;
   width: 100%;
   display: flex;
   justify-content: space-around;
