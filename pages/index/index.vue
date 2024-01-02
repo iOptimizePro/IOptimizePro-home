@@ -9,7 +9,7 @@
               <div class="title">iOptimizePro</div>
               <div class="sub-title">智能工业数据分析与优化平台</div>
               <div class="desc">
-                提供了从数据接入、数据探索、数据预处理、特征工程、模型构建、模型评估、模型管理、模型部署到最终的工程化应用的全流程“端对端”解决方案，为“全民数据科学家”提供自动化、智能化的分析模型构建能力。
+                智能工业数据分析与优化平台（iOptimizePro）是一个以人工智能技术、计算机视觉技术和数据融合技术为基础的综合性工业数据处理平台。该平台旨在帮助企业实现工业生产数据的智能化分析与优化，进而提高生产效率、降低成本并改善产品质量。
               </div>
               <div class="btn-wrapper">
                 <button class="btn btn-primary">
@@ -36,47 +36,180 @@
       </div>
     </div>
     <div class="main">
-      <div class="tx-tbi7 floats paddings">
+      <div class="page-5 paddings">
         <div class="centers">
-          <div class="tx-mains-title floats">
+          <div class="page-main-title">
+            <h3>创新应用</h3>
+            <em></em>
+          </div>
+        </div>
+      </div>
+      <div class="page-6 paddings">
+        <div class="centers">
+          <div class="page-main-title">
+            <h3>应用场景</h3>
+            <em></em>
+          </div>
+          <ul class="page6-nav">
+            <li class="cur"><img alt="" src="~/assets/images/page6/icon1.png" />能源管理</li>
+            <li class=""><img alt="" src="~/assets/images/page6/icon2.png" />设备资产管理</li>
+            <li class=""><img alt="" src="~/assets/images/page6/icon3.png" />生产质量管理</li>
+            <li class=""><img alt="" src="~/assets/images/page6/icon4.png" />供应链管理</li>
+          </ul>
+          <ul class="page6-main tab-main cur" style="display: block">
+            <li>
+              <img alt="能源消耗情况诊断" src="~/assets/images/page6/icon7.png" />
+              <h3>能源消耗情况诊断</h3>
+            </li>
+            <li>
+              <img alt="能耗异常值分析" src="~/assets/images/page6/icon8.png" />
+              <h3>能耗异常值分析</h3>
+            </li>
+            <li>
+              <img alt="能源质量监测" src="~/assets/images/page6/icon9.png" />
+              <h3>能源质量监测</h3>
+            </li>
+            <li>
+              <img alt="节能诊断分析" src="~/assets/images/page6/icon10.png" />
+              <h3>节能诊断分析</h3>
+            </li>
+            <li>
+              <img alt="能源效率评估" src="~/assets/images/page6/icon11.png" />
+              <h3>能源效率评估</h3>
+            </li>
+            <li>
+              <img alt="峰谷平衡优化" src="~/assets/images/page6/icon11.png" />
+              <h3>峰谷平衡优化</h3>
+            </li>
+            <li>
+              <img alt="能源预测与规划" src="~/assets/images/page6/icon11.png" />
+              <h3>能源预测与规划</h3>
+            </li>
+            <li>
+              <img alt="能源监控和报警" src="~/assets/images/page6/icon11.png" />
+              <h3>能源监控和报警</h3>
+            </li>
+          </ul>
+          <ul class="page6-main tab-main" style="display: none">
+            <li>
+              <img alt="设备故障诊断" src="~/assets/images/page6/icon7.png" />
+              <h3>设备故障诊断</h3>
+            </li>
+            <li>
+              <img alt="设备预测性维护" src="~/assets/images/page6/icon8.png" />
+              <h3>设备预测性维护</h3>
+            </li>
+            <li>
+              <img alt="维修保养优化" src="~/assets/images/page6/icon10.png" />
+              <h3>维修保养优化</h3>
+            </li>
+            <li>
+              <img alt="资产寿命周期管理" src="~/assets/images/page6/icon11.png" />
+              <h3>资产寿命周期管理</h3>
+            </li>
+            <li>
+              <img alt="设备利用率提升" src="~/assets/images/page6/icon11.png" />
+              <h3>设备利用率提升</h3>
+            </li>
+            <li>
+              <img alt="资产健康评估" src="~/assets/images/page6/icon11.png" />
+              <h3>资产健康评估</h3>
+            </li>
+          </ul>
+          <ul class="page6-main tab-main" style="display: none">
+            <li>
+              <img alt="设备健康<br>管理" src="~/assets/images/page6/icon7.png" />
+              <h3>生产过程监控与优化</h3>
+            </li>
+            <li>
+              <img alt="制造过程<br>诊断与优化" src="~/assets/images/page6/icon8.png" />
+              <h3>产品质量预测与控制</h3>
+            </li>
+            <li>
+              <img alt="工业蒸汽<br>量预测分析" src="~/assets/images/page6/icon9.png" />
+              <h3>原材料异常检测</h3>
+            </li>
+            <li>
+              <img alt="设备重过<br>载预测" src="~/assets/images/page6/icon10.png" />
+              <h3>SIP标准检验规程</h3>
+            </li>
+            <li>
+              <img alt="轮胎质量<br>相关性分析" src="~/assets/images/page6/icon11.png" />
+              <h3>IQC来料检验</h3>
+            </li>
+            <li>
+              <img alt="轮胎质量<br>相关性分析" src="~/assets/images/page6/icon11.png" />
+              <h3>OQC出货检验</h3>
+            </li>
+            <li>
+              <img alt="轮胎质量<br>相关性分析" src="~/assets/images/page6/icon11.png" />
+              <h3>IPQC生产过程检验</h3>
+            </li>
+            <li>
+              <img alt="轮胎质量<br>相关性分析" src="~/assets/images/page6/icon11.png" />
+              <h3>统计过程分析</h3>
+            </li>
+          </ul>
+          <ul class="page6-main tab-main" style="display: none">
+            <li>
+              <img alt="设备健康<br>管理" src="~/assets/images/page6/icon7.png" />
+              <h3>需求预测与计划</h3>
+            </li>
+            <li>
+              <img alt="制造过程<br>诊断与优化" src="~/assets/images/page6/icon8.png" />
+              <h3>供应商管理与评估</h3>
+            </li>
+            <li>
+              <img alt="工业蒸汽<br>量预测分析" src="~/assets/images/page6/icon9.png" />
+              <h3>库存优化与管理</h3>
+            </li>
+            <li>
+              <img alt="设备重过<br>载预测" src="~/assets/images/page6/icon10.png" />
+              <h3>运输与物流优化</h3>
+            </li>
+            <li>
+              <img alt="成本分析与优化" src="~/assets/images/page6/icon10.png" />
+              <h3>成本分析与优化</h3>
+            </li>
+            <li>
+              <img alt="物料效能分析" src="~/assets/images/page6/icon10.png" />
+              <h3>物料效能分析</h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-7 paddings">
+        <div class="centers">
+          <div class="page-main-title">
             <h3>文档与工具</h3>
             <em></em>
           </div>
-          <ul class="tx-tbi7-main floats">
+          <ul class="page-main floats">
             <li>
               <a href="/" target="_blank">
                 <span class="text">
-                  <h3>帮助文档</h3>
-                  <em>查看产品详细操作手册</em>
+                  <h3>用户帮助文档</h3>
+                  <em>产品使用说明和操作指南</em>
                 </span>
-                <span class="img"><img alt="帮助文档" src="~/assets/images/page5/icon1.png" /><i></i></span>
+                <span class="img"><img alt="用户帮助文档" src="~/assets/images/page7/icon1.png" /><i></i></span>
               </a>
             </li>
             <li>
               <a href="/" target="_blank">
                 <span class="text">
-                  <h3>行业干货</h3>
-                  <em>敬请期待</em>
+                  <h3>常见问题解答</h3>
+                  <em>解决用户常见疑问和困扰</em>
                 </span>
-                <span class="img"><img alt="行业干货" src="~/assets/images/page5/icon2.png" /><i></i></span>
+                <span class="img"><img alt="常见问题解答" src="~/assets/images/page7/icon3.png" /><i></i></span>
               </a>
             </li>
             <li>
               <a href="/" target="_blank">
                 <span class="text">
-                  <h3>查看解决方案</h3>
-                  <em>查看更多行业解决方案</em>
+                  <h3>客服热线</h3>
+                  <em>提供电话客户服务通道</em>
                 </span>
-                <span class="img"><img alt="查看解决方案" src="~/assets/images/page5/icon3.png" /><i></i></span>
-              </a>
-            </li>
-            <li>
-              <a href="/" target="_blank">
-                <span class="text">
-                  <h3>在线咨询</h3>
-                  <em>点此在线咨询客服</em>
-                </span>
-                <span class="img"><img alt="在线咨询" src="~/assets/images/page5/icon4.png" /><i></i></span>
+                <span class="img"><img alt="客服热线" src="~/assets/images/page7/icon4.png" /><i></i></span>
               </a>
             </li>
           </ul>
@@ -307,53 +440,171 @@
   .main {
     position: relative;
     //height: 50vh;
+    .page-5 {
+    }
 
-    .tx-tbi7-main {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
+    .page-6 {
+      .page6-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid #d5d5d5;
+        padding: 0 20px;
+        margin-bottom: 15px;
 
-      @media screen and (max-width: 768px) {
-        flex-direction: column;
+        li {
+          position: relative;
+          font-size: 18px;
+          line-height: 25px;
+          padding-bottom: 15px;
+          cursor: pointer;
+
+          @media screen and (max-width: 1280px) {
+            font-size: 16px;
+          }
+
+          @media screen and (max-width: 768px) {
+            font-size: 13px;
+            padding-bottom: 8px;
+          }
+
+          img {
+            position: relative;
+            top: -1px;
+            margin-right: 5px;
+            filter: grayscale(100%);
+            @media screen and (max-width: 768px) {
+              display: none;
+            }
+          }
+        }
+
+        .cur {
+          color: #317dff;
+
+          &::before {
+            width: 100%;
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -3px;
+            //width: 0;
+            height: 6px;
+            background: #317dff;
+            margin: 0 auto;
+            transition: 0.5s;
+
+            @media screen and (max-width: 1280px) {
+              height: 3px;
+              bottom: -2px;
+            }
+          }
+
+          img {
+            filter: grayscale(0%);
+          }
+        }
       }
 
-      li {
-        width: 23.5%;
-        margin-left: 2%;
+      .page6-main {
+        li {
+          display: inline-block;
+          width: 20%;
+          text-align: center;
+          padding: 0 30px;
+          margin-top: 40px;
+          box-sizing: border-box;
+          cursor: pointer;
 
-        &:nth-child(4n-3) {
-          margin-left: 0;
+          img {
+            height: 32px;
+          }
+
+          h3 {
+            font-size: 16px;
+            line-height: 22px;
+            margin-top: 8px;
+            font-weight: normal;
+            height: 44px;
+            overflow: hidden;
+            @media screen and (max-width: 1280px) {
+              font-size: 14px;
+              line-height: 20px;
+              height: 40px;
+            }
+
+            @media screen and (max-width: 768px) {
+              font-size: 12px;
+              line-height: 16px;
+              height: 32px;
+            }
+          }
         }
+      }
+
+      .page6-main.cur {
+        animation: tops 1s;
+
+        @keyframes tops {
+          0% {
+            transform: translate(0px, -25px);
+            opacity: 0;
+          }
+          100% {
+            transform: translate(0px, 0px);
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .page-7 {
+      .page-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
 
         @media screen and (max-width: 768px) {
-          width: 100%;
-          margin-left: 0 !important;
-          margin-bottom: 15px;
+          flex-direction: column;
         }
 
-        a {
-          position: relative;
-          display: block;
-          box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.08);
-          padding: 46px 32% 46px 24px;
-        }
+        li {
+          width: 33%;
+          margin-left: 2%;
 
-        .img {
-          position: absolute;
-          left: 68%;
-          top: 50%;
-          transform: translate(0, -50%);
-          -webkit-transform: translate(0, -50%);
-          -ms-transform: translate(0, -50%);
-        }
+          &:nth-child(3n-2) {
+            margin-left: 0;
+          }
 
-        em {
-          display: block;
-          font-size: 16px;
-          line-height: 30px;
-          font-style: normal;
-          color: #999;
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            margin-left: 0 !important;
+            margin-bottom: 15px;
+          }
+
+          a {
+            position: relative;
+            display: block;
+            box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.08);
+            padding: 46px 32% 46px 24px;
+          }
+
+          .img {
+            position: absolute;
+            left: 68%;
+            top: 50%;
+            transform: translate(0, -50%);
+          }
+
+          em {
+            display: block;
+            font-size: 16px;
+            line-height: 30px;
+            font-style: normal;
+            color: #999;
+          }
         }
       }
     }
