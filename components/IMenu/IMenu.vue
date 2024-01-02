@@ -6,31 +6,31 @@ const isOpenDropdown = ref(false)
 
 const data = ref([
   {
-    name: '数据上传',
+    name: '产品简介',
     url: '#',
   },
   {
-    name: '场景列表',
+    name: '目标人群',
     url: '#',
   },
   {
-    name: '数据分析',
+    name: '核心功能',
     url: '#',
   },
   {
-    name: '通知提醒',
+    name: '产品优势',
     url: '#',
   },
   {
-    name: '人员管理',
+    name: '创新应用',
     url: '#',
   },
   {
-    name: '角色切换',
+    name: '应用场景',
     url: '#',
   },
   {
-    name: '个人中心',
+    name: '文档与工具',
     url: '#',
   },
 ])
