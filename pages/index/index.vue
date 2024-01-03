@@ -22,16 +22,16 @@
 </template>
 
 <script lang="ts" setup>
-import Footer from '~/pages/index/components/Footer.vue'
-import Page1 from '~/pages/index/components/Page1.vue'
-import Page2 from '~/pages/index/components/Page2.vue'
-import Page3 from '~/pages/index/components/page3.vue'
-import Page4 from '~/pages/index/components/Page4.vue'
-import Page5 from '~/pages/index/components/Page5.vue'
-import Page6 from '~/pages/index/components/Page6.vue'
-import Page7 from '~/pages/index/components/Page7.vue'
-import Banner from '~/pages/index/components/Banner.vue'
 import IButton from '~/components/IButton/IButton.vue'
+import Banner from '~/pageComponents/index/components/Banner.vue'
+import Page1 from '~/pageComponents/index/components/Page1.vue'
+import Page2 from '~/pageComponents/index/components/Page2.vue'
+import Page3 from '~/pageComponents/index/components/page3.vue'
+import Page4 from '~/pageComponents/index/components/Page4.vue'
+import Page5 from '~/pageComponents/index/components/Page5.vue'
+import Page6 from '~/pageComponents/index/components/Page6.vue'
+import Page7 from '~/pageComponents/index/components/Page7.vue'
+import Footer from '~/pageComponents/index/components/Footer.vue'
 </script>
 
 <style lang="scss" scoped>

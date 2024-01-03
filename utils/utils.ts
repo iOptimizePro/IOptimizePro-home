@@ -6,7 +6,7 @@
  */
 export const importImage: any = computed(() => (url: string) => {
   const glob: Record<string, any> = import.meta.glob(`~/assets/images/**/*`, {
-    eager: true
-  });
-  return glob[`${url}`]["default"];
-});
+    eager: true,
+  })
+  return glob[`${url}`]['default']
+})

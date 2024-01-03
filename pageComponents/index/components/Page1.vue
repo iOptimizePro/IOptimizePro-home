@@ -1,4 +1,6 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const mainData = ref([])
+</script>
 
 <template>
   <div class="page-1 paddings">
