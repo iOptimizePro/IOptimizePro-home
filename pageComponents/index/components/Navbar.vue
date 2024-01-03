@@ -60,17 +60,18 @@ const navData = ref([
 
     .navbar-item {
       position: relative;
-      width: 12.5%;
+      width: calc(100% / 7);
       text-align: center;
-      padding: 20px;
+      margin: 20px 0;
+      border-right: 1px solid #e5e5e5;
 
       a {
         display: block;
         font-size: 16px;
+        font-weight: 700;
         color: #707070;
         line-height: 36px;
         height: 36px;
-        border-right: 1px solid #e5e5e5;
 
         @media only screen and (min-width: 1025px) and (max-width: 1456px) {
           line-height: 68px;
@@ -83,9 +84,7 @@ const navData = ref([
       }
 
       &:last-child {
-        a {
-          border-right: none;
-        }
+        border-right: none;
       }
     }
   }
