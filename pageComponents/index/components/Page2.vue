@@ -81,24 +81,6 @@ const mainData = ref([
           <h3>{{ item.title }}</h3>
         </li>
       </ul>
-      <!--<div class="tab-main cur" style="display: flex">-->
-      <!--  <div class="text">-->
-      <!--    <h3>业务人员智能分析，一步搞定挖掘建模</h3>-->
-      <!--    <h4>内置案例开箱即用，全流程智能建模，零基础轻松玩转高阶技能</h4>-->
-      <!--    <p>内置丰富的行业案例，开箱即用，引导快速构建专属的业务模型</p>-->
-      <!--    <p>提供一键式建模功能，自动完成数据处理、特征工程 、算法选择和参数择优等全流程自动化实现</p>-->
-      <!--    <p>有效降低技术门槛，让业务人员能够快速构建专业模型</p>-->
-      <!--  </div>-->
-      <!--  <div class="img">-->
-      <!--    <div class="main">-->
-      <!--      <img src="~/assets/images/page2/img1.png" alt="" />-->
-      <!--      <h3>不懂 AI 技术也能玩转“机器学习”</h3>-->
-      <!--      <span><i>零基础</i> <i>智能化</i> <i>低门槛</i> </span>-->
-      <!--      <h4>三小时快速学习、一步智能建模、一键快速部署</h4>-->
-      <!--    </div>-->
-      <!--  </div>-->
-      <!--</div>-->
-
       <div v-for="(item, index) in mainData" :key="index" :class="['tab-main', index === cur ? 'cur' : '']">
         <div class="text">
           <h3>{{ item.left.title }}</h3>
@@ -128,6 +110,9 @@ const mainData = ref([
     align-items: center;
     border-bottom: 1px solid #d5d5d5;
     margin-bottom: 70px;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 25px;
+    }
 
     li {
       position: relative;
@@ -137,6 +122,11 @@ const mainData = ref([
       margin: 0 85px;
       cursor: pointer;
       padding-bottom: 12px;
+
+      @media screen and (max-width: 768px) {
+        margin: 0 24px;
+        padding-bottom: 6px;
+      }
 
       &::before {
         content: '';
@@ -149,6 +139,11 @@ const mainData = ref([
         background: #317dff;
         bottom: -3px;
         transition: 0.5s;
+
+        @media screen and (max-width: 1280px) {
+          height: 3px;
+          bottom: -2px;
+        }
       }
 
       h3 {
@@ -156,12 +151,27 @@ const mainData = ref([
         line-height: 25px;
         font-weight: normal;
         margin-top: 7px;
+
+        @media screen and (max-width: 1280px) {
+          font-size: 16px;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: 13px;
+          margin-top: 5px;
+          line-height: 20px;
+        }
       }
 
       img {
         width: 45px;
         height: 45px;
         margin-bottom: 10px;
+
+        @media screen and (max-width: 768px) {
+          width: 30px;
+          height: 30px;
+        }
       }
     }
 
@@ -276,13 +286,13 @@ const mainData = ref([
         box-sizing: border-box;
         display: block;
         width: calc(100% - 20px);
-        height: 334px;
+        height: 314px;
         margin-left: 20px;
         padding: 40px 30px;
         box-shadow: 0 3px 40px rgba(49, 125, 255, 0.21);
 
         @media screen and (max-width: 1280px) {
-          height: 275px;
+          height: 255px;
         }
 
         @media screen and (max-width: 768px) {
@@ -385,7 +395,7 @@ const mainData = ref([
           color: #317dff;
           font-weight: normal;
           text-align: center;
-          margin-top: 30px;
+          margin-top: 45px;
           padding: 0;
           // 单行换行
           width: 100%;
@@ -395,7 +405,7 @@ const mainData = ref([
 
           @media screen and (max-width: 1280px) {
             font-size: 17px;
-            margin-top: 20px;
+            margin-top: 35px;
           }
           @media screen and (max-width: 768px) {
             font-size: 14px;
