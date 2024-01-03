@@ -34,6 +34,7 @@ a {
 html,
 body {
   //overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 @font-face {

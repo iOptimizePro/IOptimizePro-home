@@ -143,7 +143,7 @@ const mainData = ref([
 </script>
 
 <template>
-  <div class="page-6 paddings">
+  <div id="page6" class="page-6 paddings">
     <div class="centers">
       <div class="page-main-title">
         <h3>应用场景</h3>

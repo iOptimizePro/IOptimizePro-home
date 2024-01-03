@@ -33,7 +33,7 @@ const mainData = ref([
 </script>
 
 <template>
-  <div class="page-4 paddings">
+  <div id="page4" class="page-4 paddings">
     <div class="centers">
       <div class="page-main-title">
         <h3>产品优势</h3>

@@ -58,7 +58,7 @@ const mainData = ref([
 </script>
 
 <template>
-  <div class="page-3 paddings">
+  <div id="page3" class="page-3 paddings">
     <div class="centers">
       <div class="page-main-title">
         <h3>产品功能展示</h3>

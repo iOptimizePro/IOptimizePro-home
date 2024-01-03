@@ -6,31 +6,31 @@ const isOpenDropdown = ref(false)
 
 const data = ref([
   {
-    name: '产品简介',
+    name: '数据上传',
     url: '#',
   },
   {
-    name: '目标人群',
+    name: '场景列表',
     url: '#',
   },
   {
-    name: '核心功能',
+    name: '数据分析',
     url: '#',
   },
   {
-    name: '产品优势',
+    name: '通知提醒',
     url: '#',
   },
   {
-    name: '创新应用',
+    name: '人员管理',
     url: '#',
   },
   {
-    name: '应用场景',
+    name: '角色切换',
     url: '#',
   },
   {
-    name: '文档与工具',
+    name: '个人中心',
     url: '#',
   },
 ])
@@ -69,8 +69,6 @@ function toggleDropdown() {
 .menu {
   $menu-height: 70px;
 
-  position: sticky;
-  top: 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -81,6 +79,8 @@ function toggleDropdown() {
   z-index: 999;
 
   @media screen and (max-width: 768px) {
+    position: sticky;
+    top: 0;
     justify-content: space-between;
   }
 
