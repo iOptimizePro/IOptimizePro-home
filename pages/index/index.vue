@@ -2,6 +2,7 @@
   <div id="app">
     <i-menu />
     <Banner />
+    <Navbar />
     <div class="main">
       <Page1 />
       <Page2 />
@@ -24,6 +25,7 @@
 <script lang="ts" setup>
 import IButton from '~/components/IButton/IButton.vue'
 import Banner from '~/pageComponents/index/components/Banner.vue'
+import Navbar from '~/pageComponents/index/components/Navbar.vue'
 import Page1 from '~/pageComponents/index/components/Page1.vue'
 import Page2 from '~/pageComponents/index/components/Page2.vue'
 import Page3 from '~/pageComponents/index/components/page3.vue'

@@ -8,9 +8,9 @@
           <div class="blur-wrapper">
             <div class="title">iOptimizePro</div>
             <div class="sub-title">智能工业数据分析与优化平台</div>
-            <div class="desc">
-              智能工业数据分析与优化平台（iOptimizePro）是一个以人工智能技术、计算机视觉技术和数据融合技术为基础的综合性工业数据处理平台。该平台旨在帮助企业实现工业生产数据的智能化分析与优化，进而提高生产效率、降低成本并改善产品质量。
-            </div>
+            <!--<div class="desc">-->
+            <!--  智能工业数据分析与优化平台（iOptimizePro）是一个以人工智能技术、计算机视觉技术和数据融合技术为基础的综合性工业数据处理平台。该平台旨在帮助企业实现工业生产数据的智能化分析与优化，进而提高生产效率、降低成本并改善产品质量。-->
+            <!--</div>-->
             <div class="btn-wrapper">
               <i-button url="http://front.ioptimizepro.healwrap.cn"> 立即体验</i-button>
             </div>

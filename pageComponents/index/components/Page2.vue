@@ -69,10 +69,10 @@ const mainData = ref([
 </script>
 
 <template>
-  <div class="page-2 paddings">
+  <div id="page2" class="page-2 paddings">
     <div class="centers">
       <div class="page-main-title">
-        <h3>目标人群</h3>
+        <h3>"让每个员工都能轻松参与数据分析与优化， 让每个员工都能成为数据分析专家。"</h3>
         <em></em>
       </div>
       <ul class="page-nav">
@@ -122,6 +122,7 @@ const mainData = ref([
       margin: 0 85px;
       cursor: pointer;
       padding-bottom: 12px;
+      filter: grayscale(100%);
 
       @media screen and (max-width: 768px) {
         margin: 0 24px;
@@ -176,6 +177,8 @@ const mainData = ref([
     }
 
     li.cur {
+      filter: grayscale(0%);
+
       &::before {
         width: 100%;
       }

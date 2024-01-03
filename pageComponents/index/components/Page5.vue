@@ -53,7 +53,7 @@ const mainData = ref([
 </script>
 
 <template>
-  <div class="page-5 paddings">
+  <div id="page5" class="page-5 paddings">
     <div class="centers">
       <div class="page-main-title">
         <h3>创新应用</h3>

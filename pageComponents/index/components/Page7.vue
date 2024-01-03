@@ -19,7 +19,7 @@ const mainData = ref([
 </script>
 
 <template>
-  <div class="page-7 paddings">
+  <div id="page7" class="page-7 paddings">
     <div class="centers">
       <div class="page-main-title">
         <h3>文档与工具</h3>
