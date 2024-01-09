@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 // 引入公共样式
 import '~/styles/styles.scss'
+import { executeAfterImagesLoaded } from '~/utils/utils'
 
 useSeoMeta({
   title: 'IOptimizePro | 智能工业数据分析与优化平台',
@@ -11,10 +12,26 @@ useSeoMeta({
 useHead({
   link: [{ rel: 'icon', type: 'image/svg+xml', href: '/logo.png' }],
 })
+
+const loadingRef = ref(null)
+const nuxtPage = ref(false)
+nextTick(() => {
+  if (process.client) {
+    setTimeout(() => {
+      executeAfterImagesLoaded(() => {
+        nuxtPage.value = true
+        setTimeout(() => {
+          loadingRef.value.close()
+        }, 1000)
+      })
+    }, 1000)
+  }
+})
 </script>
 
 <template>
-  <NuxtPage :keepalive="{ max: 10 }" />
+  <ILoading ref="loadingRef" />
+  <NuxtPage :hidden="!nuxtPage" :keepalive="{ max: 10 }" />
 </template>
 
 <style lang="scss">

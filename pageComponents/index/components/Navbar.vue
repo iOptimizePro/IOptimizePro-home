@@ -73,9 +73,9 @@ const navData = ref([
         line-height: 36px;
         height: 36px;
 
-        @media only screen and (min-width: 1025px) and (max-width: 1456px) {
-          line-height: 68px;
-          height: 68px;
+        @media screen and (max-width: 1456px) {
+          line-height: 25px;
+          height: 25px;
         }
       }
 

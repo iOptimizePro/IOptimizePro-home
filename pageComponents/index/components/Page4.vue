@@ -77,7 +77,6 @@ const mainData = ref([
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease;
         filter: grayscale(50%);
-        transition: all 0.3s ease;
 
         &:hover {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);

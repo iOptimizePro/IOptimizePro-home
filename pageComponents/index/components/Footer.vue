@@ -8,14 +8,13 @@
     <div class="footer-down">
       <div class="inner">
         <div class="left">
-          友情链接：<a href="/" rel="nofollow" target="_blank">Vue.js官网</a>　　　
-          <a href="/" rel="nofollow" target="_blank">iOptimizePro智能工业数据分析与优化平台 </a>
-          <br />Created by 智造前沿 2023
+          <div>友情链接：<a href="/">Vue.js官网</a></div>
+          <div><a href="/">iOptimizePro智能工业数据分析与优化平台 </a></div>
+          <div>Created by 智造前沿 2023</div>
         </div>
         <div class="right">
-          <a href="/" target="_blank">网站地图</a><br />
-          版权所有@2023
-          <a href="/" rel="nofollow" target="_blank">智造前沿</a>
+          <a href="/" target="_blank">网站地图</a>
+          <div>版权所有@2023 <a href="/" rel="nofollow" target="_blank">智造前沿</a></div>
         </div>
       </div>
     </div>
@@ -80,6 +79,23 @@
       span,
       a {
         color: #fff;
+      }
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width: 768px) {
+          margin-bottom: 10px;
+          align-items: center;
+        }
+      }
+
+      .right {
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width: 768px) {
+          align-items: center;
+        }
       }
     }
   }
