@@ -8,4 +8,3 @@ export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.component(i, icons[i])
   }
 })
-
