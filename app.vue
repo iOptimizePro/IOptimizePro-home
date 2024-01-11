@@ -10,7 +10,7 @@ useSeoMeta({
   keywords: '工业数据分析 优化平台',
 })
 useHead({
-  link: [{ rel: 'icon', type: 'image/svg+xml', href: '/logo.png' }],
+  link: [{ rel: 'icon', type: 'image/svg+xml', href: '~/assets/logo.png' }],
 })
 
 const loadingRef = ref<any>(null)
