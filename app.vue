@@ -1,7 +1,11 @@
 <script lang="ts" setup>
 // 引入公共样式
 import '~/styles/styles.scss'
+// 在图片加载完毕后执行
 import { executeAfterImagesLoaded } from '~/utils/utils'
+// 阻尼滚动
+// gsap
+import { initSmoothScrolling } from '~/utils/initSmoothScrolling'
 
 useSeoMeta({
   title: 'IOptimizePro | 智能工业数据分析与优化平台',
@@ -27,6 +31,10 @@ nextTick(() => {
     }, 1000)
   }
 })
+
+if (process.client) {
+  initSmoothScrolling()
+}
 </script>
 
 <template>

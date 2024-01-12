@@ -297,7 +297,7 @@ const mainData = ref([
         color: #317dff;
         line-height: 45px;
         width: 136px;
-        border-radius: 0 14px 0 14px;
+        border-radius: 5px;
         background: #fff;
         text-align: center;
         margin-top: 46px;
