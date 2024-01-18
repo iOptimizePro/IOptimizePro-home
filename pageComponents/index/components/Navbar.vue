@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+
 const navData = ref([
   {
     name: '产品简介',
@@ -29,6 +30,11 @@ const navData = ref([
     url: '#page7',
   },
 ])
+
+function navigateTo(url: string) {
+  // @ts-ignore
+  window.lenis.scrollTo(url)
+}
 </script>
 
 <template>
@@ -36,7 +42,7 @@ const navData = ref([
     <div class="centers">
       <div class="navbar-wrapper">
         <div v-for="item in navData" class="navbar-item">
-          <a :href="item.url" class="tab">{{ item.name }}</a>
+          <span @click="navigateTo(item.url)" class="tab">{{ item.name }}</span>
         </div>
       </div>
     </div>
@@ -65,13 +71,14 @@ const navData = ref([
       margin: 20px 0;
       border-right: 1px solid #e5e5e5;
 
-      a {
+      span {
         display: block;
         font-size: 16px;
         font-weight: 700;
         color: #707070;
         line-height: 36px;
         height: 36px;
+        cursor: pointer;
 
         @media screen and (max-width: 1456px) {
           line-height: 25px;
@@ -79,7 +86,7 @@ const navData = ref([
         }
       }
 
-      a.active {
+      span.active {
         color: #317dff;
       }
 

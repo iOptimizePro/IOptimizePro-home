@@ -21,7 +21,7 @@ export default defineNuxtConfig({
         deleteOriginFile: false, // 是否删除原文件
         compressionOptions: {
           // 压缩级别
-          level: 9,
+          level: 5,
         },
       }),
     ],
